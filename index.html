@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificar Número Primo</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(imagen/83adfc6e00273fac549747a0eb3b4487.gif);
+            background-size: cover;   
+        }
+   
+</style>
+  <div class="container">
+
+
+    <img src="imagen/logo - MINI JUEGOS.png" alt="File not found" class="logo">
+
+    <label for="numberInput">Ingresa un número: </label>
+    <input type="number" id="numberInput" placeholder="Ingrese un número">
+    <button onclick="checkPrime()">Verificar Primo</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function checkPrime() {
+      var numberInput = document.getElementById("numberInput").value;
+      var resultMessage = document.getElementById("result");
+
+      if (numberInput === "") {
+        resultMessage.textContent = "Por favor, ingrese un número.";
+        return;
+      }
+
+      var number = parseInt(numberInput);
+
+      if (isNaN(number)) {
+        resultMessage.textContent = "Por favor, ingrese un número válido.";
+        return;
+      }
+
+      if (isPrime(number)) {
+        resultMessage.textContent = number + " es un número primo.";
+      } else {
+        resultMessage.textContent = number + " no es un número primo.";
+      }
+    }
+
+    function isPrime(num) {
+      if (num <= 1) return false;
+      if (num <= 3) return true;
+
+      if (num % 2 === 0 || num % 3 === 0) return false;
+
+      for (var i = 5; i * i <= num; i = i + 6) {
+        if (num % i === 0 || num % (i + 2) === 0) return false;
+      }
+
+      return true;
+    }
+  </script>
+
+  <link rel="stylesheet" href="estilos.css">
+</body>
+</html>
+
+ 
+

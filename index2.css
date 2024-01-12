@@ -1,0 +1,75 @@
+body {
+  background-image: url(imagen/83adfc6e00273fac549747a0eb3b4487.gif);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+
+/* Estilos generales */
+h1 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 1.5em;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 20px; /* Unificando el borde redondeado */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    background: linear-gradient(to right, #000, #fff);
+  
+  }
+  
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .question {
+    margin-top: 20px;
+  }
+  
+  .options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .option {
+    margin: 0 10px;
+  }
+  
+  /* Estilos para centrar y agrandar el logo */
+  .center {
+    text-align: center; /* Centrar horizontalmente */
+    margin: 0 auto; /* Centrar horizontalmente en contenedores con ancho fijo */
+    width: 300px; /* Ajustar el ancho del logo */
+  }
+  
